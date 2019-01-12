@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listview_header"
+    android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:background="#FF03A9F4">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="25"
+                            android:layout_gravity="center"
+                            android:elevation="6dp"
+                            android:background="@drawable/linear_layout3"
+                            android:layout_margin="5dp">
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/search"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:background="@drawable/barcode"
+                                    android:gravity="center"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_gravity="center"
+                                    android:textSize="15dp"
+                                    android:textColor="#000000"
+                                    android:id="@+id/search_b" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:gravity="center"
+                                    android:id="@+id/b_id"
+                                    android:inputType="number"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/edittext"
+                                    android:elevation="5dp"
+                                    android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:layout_gravity="center">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="SEARCH BOOK"
+                                    android:gravity="center"
+                                    android:layout_weight="25"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/search_button"
+                                    android:textSize="15dp"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"
+                                    android:elevation="10dp"
+                                    android:background="@drawable/button4" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:elevation="6dp"
+                            android:background="@drawable/linear_layout3"
+                            android:layout_margin="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="BOOK DETAILS"
+                                    android:layout_weight="25"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"
+                                    />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="25"
+                            android:layout_gravity="center"
+                            android:elevation="6dp"
+                            android:background="@drawable/linear_layout3"
+                            android:layout_margin="5dp">
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/search"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="BOOK NAME"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="15dp"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:id="@+id/b_name"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:inputType="textMultiLine" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="25"
+                            android:layout_gravity="center"
+                            android:elevation="6dp"
+                            android:background="@drawable/linear_layout3"
+                            android:layout_margin="5dp">
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/search"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="AUTHOR"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="15dp"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:gravity="center"
+                                    android:id="@+id/b_author"
+                                    android:layout_gravity="center"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:inputType="textMultiLine" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="25"
+                            android:layout_gravity="center"
+                            android:elevation="6dp"
+                            android:background="@drawable/linear_layout3"
+                            android:layout_margin="5dp">
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/search"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="PUBLICATION"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="15dp"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:gravity="center"
+                                    android:id="@+id/b_publication"
+                                    android:layout_gravity="center"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:inputType="textMultiLine" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="25"
+                            android:layout_gravity="center"
+                            android:elevation="6dp"
+                            android:background="@drawable/linear_layout3"
+                            android:layout_margin="5dp">
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/search"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="EDITION"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="15dp"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:id="@+id/b_edition"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:inputType="textMultiLine" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="25"
+                            android:layout_gravity="center"
+                            android:elevation="6dp"
+                            android:background="@drawable/linear_layout3"
+                            android:layout_margin="5dp">
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/search"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="PURCHASE DATE"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="15dp"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:id="@+id/b_date_pur"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="25"
+                            android:layout_gravity="center"
+                            android:elevation="6dp"
+                            android:background="@drawable/linear_layout3"
+                            android:layout_margin="5dp">
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/search"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="QUANTITY"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="15dp"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:gravity="center"
+                                    android:id="@+id/b_quantity"
+                                    android:layout_gravity="center"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:layout_gravity="center"
+                            android:elevation="6dp"
+                            android:background="@drawable/linear_layout3"
+                            android:layout_margin="5dp">
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/search"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="BOOK PRICE"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textSize="15dp"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:id="@+id/b_price"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:elevation="6dp"
+                            android:background="@drawable/linear_layout3"
+                            android:layout_margin="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="BOOK ISSUE DETAILS"
+                                    android:layout_weight="25"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:textSize="20dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="#000000"
+                                    android:elevation="2dp"
+                                    android:padding="5dp"
+                                    android:layout_marginRight="5dp"
+                                    />
+                        </LinearLayout>
+                        <com.example.shu.dbms_project.NestedListView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/listview3"
+                            android:layout_marginTop="10dp"
+                            android:transitionGroup="false"
+                            android:divider="@null"
+                            android:dividerHeight="0dp">
+                        </com.example.shu.dbms_project.NestedListView>
+
+                </LinearLayout>
+
+        </ScrollView>
+
+
+</LinearLayout>
+
